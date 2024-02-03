@@ -5,8 +5,10 @@ body {
 .conversor-container {
     width: 100%;
     max-width: 400px;
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 20px;
+    border: 1px solid black;
+    border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -15,19 +17,32 @@ body {
 }
 
 .input-group {
+    display: flex;
+    align-items: center;
     margin-bottom: 10px;
+    position: relative;
 }
 
-.input-group label {
-    display: block;
+.etiqueta {
+    position: absolute;
+    left: 0;
+    top: -10px;
+    background: white;
+    padding: 0 5px;
+    font-size: 0.8em;
 }
 
-.input-group input {
-    width: 100%;
+.input-group input,
+.input-group select {
+    margin-right: 5px;
     padding: 10px;
-    margin-top: 5px;
     border: 1px solid #ddd;
+    border-radius: 4px;
     box-sizing: border-box;
+}
+
+#monto, #resultado {
+    flex-grow: 1;
 }
 
 #convertir {
@@ -36,22 +51,11 @@ body {
     background-color: green;
     color: white;
     border: none;
+    border-radius: 4px;
     cursor: pointer;
+    margin-top: 15px;
 }
 
 #convertir:hover {
     background-color: darkgreen;
-}
-
-.input-group {
-    display: flex;
-    margin-bottom: 10px;
-}
-
-.input-group input,
-.input-group select {
-    margin-right: 5px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    box-sizing: border-box;
 }
