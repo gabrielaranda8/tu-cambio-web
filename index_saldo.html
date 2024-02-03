@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Conversor de Divisas</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="conversor-container">
+    <div class="titulo">
+        <h1>Pasar euros a Transferencia bancaria Argentina en dólares</h1>
+    </div>
+    <div class="conversor">
+<div class="input-group">
+            <input type="number" id="monto" placeholder="Cantidad">
+            <select id="moneda-origen">
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="ARS">ARS</option>
+                <option value="USD">USD</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <input type="text" id="resultado" placeholder="Cantidad" readonly>
+            <select id="moneda-destino">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="ARS">ARS</option>
+            </select>
+        </div>
+        <button id="convertir" onclick="convertir()">Crear pedido</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

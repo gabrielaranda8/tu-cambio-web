@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.conversor-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.titulo h1 {
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 10px;
+}
+
+.input-group label {
+    display: block;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+#convertir {
+    width: 100%;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#convertir:hover {
+    background-color: darkgreen;
+}
+
+.input-group {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.input-group input,
+.input-group select {
+    margin-right: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
