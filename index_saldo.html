@@ -10,10 +10,11 @@
 
 <div class="conversor-container">
     <div class="titulo">
-        <h1>Pasar euros a Transferencia bancaria Argentina en dólares</h1>
+        <h1>Pasar <span id="titulo-moneda-origen">Euros</span> a <span id="titulo-moneda-destino">Dólares</span></h1>
     </div>
     <div class="conversor">
 <div class="input-group">
+            <span class="etiqueta">Tu envías <span id="moneda-envio-label">EUR</span></span>
             <input type="number" id="monto" placeholder="Cantidad">
             <select id="moneda-origen">
                 <option value="EUR">EUR</option>
@@ -23,6 +24,7 @@
             </select>
         </div>
         <div class="input-group">
+            <span class="etiqueta">Te enviamos <span id="moneda-recepcion-label">USD</span></span>
             <input type="text" id="resultado" placeholder="Cantidad" readonly>
             <select id="moneda-destino">
                 <option value="USD">USD</option>
@@ -38,3 +40,4 @@
 <script src="script.js"></script>
 </body>
 </html>
+
